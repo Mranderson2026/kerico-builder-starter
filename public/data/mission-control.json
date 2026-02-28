@@ -1,0 +1,132 @@
+{
+  "updatedAt": "2026-02-28T22:02:03.770Z",
+  "source": "ops/mission-control/mission-control-dashboard.md",
+  "kpis": {
+    "vans_utilized_pct": "__",
+    "trips_per_van_per_day": "__",
+    "margin_per_trip": "__",
+    "facility_pipeline_count": "__",
+    "close_rate_pct": "__",
+    "broker_trip_share_pct": "__"
+  },
+  "tickets": [
+    {
+      "id": "T-001",
+      "objective": "Build initial direct-contract target list in TX + GA",
+      "owner": "Pipeline",
+      "reviewer": "Sentinel",
+      "due": "Today EOD",
+      "status": "In Progress"
+    },
+    {
+      "id": "T-002",
+      "objective": "Send 10 quality outreach touches to decision-makers",
+      "owner": "Signal",
+      "reviewer": "Pipeline",
+      "due": "Today EOD",
+      "status": "In Progress"
+    },
+    {
+      "id": "T-003",
+      "objective": "Set min margin/trip + max payment term acceptance rules",
+      "owner": "Northstar",
+      "reviewer": "Aegis",
+      "due": "Today EOD",
+      "status": "In Progress"
+    },
+    {
+      "id": "T-004",
+      "objective": "Establish current utilization and deadhead baseline",
+      "owner": "RouteMax",
+      "reviewer": "CareWatch",
+      "due": "Tomorrow noon",
+      "status": "Not Started"
+    },
+    {
+      "id": "T-005",
+      "objective": "Publish one authority post tied to direct facility value prop",
+      "owner": "Forge",
+      "reviewer": "Pulse",
+      "due": "Today EOD",
+      "status": "In Progress"
+    },
+    {
+      "id": "T-006",
+      "objective": "Stand up processing -> reconciliation -> CFO reporting chain",
+      "owner": "Ledger",
+      "reviewer": "Matchpoint",
+      "due": "48 hours",
+      "status": "Not Started"
+    },
+    {
+      "id": "T-007",
+      "objective": "Create secure IG extraction capability with guardrails",
+      "owner": "Sentinel (security)",
+      "reviewer": "Aegis",
+      "due": "Completed today",
+      "status": "Completed (guardrail-approved)"
+    }
+  ],
+  "activity": [
+    {
+      "time": "2026-02-28 16:01:04",
+      "source": "git:workspace",
+      "activity": "f12d4ce Auto-reflect TUI activity in Mission Control and enable 2-minute refresh daemon"
+    },
+    {
+      "time": "2026-02-28 15:58:50",
+      "source": "git:kerico-builder-starter",
+      "activity": "29ae6dc Add mission control page and homepage entry point"
+    },
+    {
+      "time": "2026-02-28 15:56:52",
+      "source": "git:kerico-builder-starter",
+      "activity": "836fc23 Test Vercel Git integration trigger"
+    },
+    {
+      "time": "2026-02-28 15:08:30",
+      "source": "git:kerico-builder-starter",
+      "activity": "f2d8e0c Add lockfile for reproducible installs"
+    },
+    {
+      "time": "2026-02-28 14:28:59",
+      "source": "git:kerico-builder-starter",
+      "activity": "ffeb94d Initial scaffold: Next.js + CI + Vercel workflows"
+    },
+    {
+      "time": "2026-02-28 14:21:56",
+      "source": "git:workspace",
+      "activity": "e70e3dc Scaffold first Builder Mode project with Next.js and CI/Vercel workflows"
+    },
+    {
+      "time": "2026-02-28 14:20:27",
+      "source": "git:workspace",
+      "activity": "6150349 Add Builder Mode account config pack, CI workflows, and secrets/deploy rules"
+    },
+    {
+      "time": "2026-02-28 14:16:19",
+      "source": "git:workspace",
+      "activity": "39b27cd Initialize Builder Mode Project OS v1 with pipeline SOPs and templates"
+    },
+    {
+      "time": "2026-02-28 13:24:17",
+      "source": "git:workspace",
+      "activity": "017c722 Create Feb monthly-close workspace and team upload request template"
+    },
+    {
+      "time": "2026-02-28 13:19:14",
+      "source": "git:workspace",
+      "activity": "fb26482 Add secure finance document-drop bookkeeping system and close templates"
+    },
+    {
+      "time": "2026-02-28 13:00:46",
+      "source": "git:workspace",
+      "activity": "0cebc9f Add OpenClaw self-improvement research protocol and heartbeat routine"
+    },
+    {
+      "time": "2026-02-28 13:00:20",
+      "source": "git:workspace",
+      "activity": "b21cf76 Create complete Kerico B2C launch system and execution assets"
+    }
+  ]
+}

@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "sync:mission-control": "node scripts/sync-mission-control.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

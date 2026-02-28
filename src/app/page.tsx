@@ -1,13 +1,34 @@
+const features = [
+  'Next.js 14 app router',
+  'GitHub Actions CI + Vercel workflows',
+  'Preview and production deployment rules',
+  'Mission Control status section'
+];
+
 export default function HomePage() {
   return (
-    <main style={{ padding: 24, fontFamily: 'Arial, sans-serif' }}>
+    <main style={{ padding: 24, fontFamily: 'Arial, sans-serif', maxWidth: 900, margin: '0 auto' }}>
       <h1>🦾 Kerico Builder Starter</h1>
       <p>Project OS v1 is active. Ready to build and deploy.</p>
-      <ul>
-        <li>Next.js 14 app router</li>
-        <li>GitHub Actions CI + Vercel workflows</li>
-        <li>Preview and production deployment rules</li>
-      </ul>
+
+      <section style={{ marginTop: 24, padding: 16, border: '1px solid #dbe4ff', borderRadius: 12, background: '#f8fbff' }}>
+        <h2 style={{ marginTop: 0 }}>Mission Control</h2>
+        <p style={{ marginBottom: 8 }}>
+          Track live operations progress and KPIs from your central dashboard.
+        </p>
+        <a href="/mission-control" style={{ color: '#1d4ed8', fontWeight: 600 }}>
+          Open Mission Control →
+        </a>
+      </section>
+
+      <section style={{ marginTop: 24 }}>
+        <h3>Starter Features</h3>
+        <ul>
+          {features.map((feature) => (
+            <li key={feature}>{feature}</li>
+          ))}
+        </ul>
+      </section>
     </main>
   );
 }

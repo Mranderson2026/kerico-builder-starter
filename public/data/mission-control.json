@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-02-28T22:02:03.770Z",
+  "updatedAt": "2026-02-28T22:04:23.453Z",
   "source": "ops/mission-control/mission-control-dashboard.md",
   "kpis": {
     "vans_utilized_pct": "__",
@@ -68,6 +68,11 @@
     }
   ],
   "activity": [
+    {
+      "time": "2026-02-28 16:02:26",
+      "source": "git:kerico-builder-starter",
+      "activity": "cd98fc6 Auto-sync mission control data and render TUI activity in app dashboard"
+    },
     {
       "time": "2026-02-28 16:01:04",
       "source": "git:workspace",

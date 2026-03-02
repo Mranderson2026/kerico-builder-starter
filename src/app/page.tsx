@@ -34,6 +34,12 @@ export default function HomePage() {
         <a href="/agent-business-kit" style={{ color: '#111827', fontWeight: 700 }}>Open Agent Business OS Kit →</a>
       </section>
 
+      <section style={{ marginTop: 24, padding: 16, border: '1px solid #e5e7eb', borderRadius: 12, background: '#f9fafb' }}>
+        <h3 style={{ marginTop: 0 }}>NEMT Product Suite</h3>
+        <p>Dedicated NEMT digital products for direct-contract growth and margin operations.</p>
+        <a href="/nemt-products" style={{ color: "#111827", fontWeight: 700 }}>Open NEMT Product Suite →</a>
+      </section>
+
       <section style={{ marginTop: 24 }}>
         <h3>Starter Features</h3>
         <ul>

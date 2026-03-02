@@ -1,0 +1,2 @@
+const link = process.env.NEXT_PUBLIC_NEMT_FACILITY_KIT_CHECKOUT || '#';
+export default function Page(){return <main style={{padding:24,fontFamily:'Arial',maxWidth:860,margin:'0 auto'}}><h1>NEMT Facility Growth Kit</h1><p>Scripts, pipeline templates, and offer positioning to win direct facility contracts.</p><p><b>$249 one-time</b></p><a href={link} style={{background:'#1d4ed8',color:'#fff',padding:'10px 14px',borderRadius:8,textDecoration:'none'}}>Buy Now</a>{link==='#'&&<p style={{color:'#b45309'}}>Set NEXT_PUBLIC_NEMT_FACILITY_KIT_CHECKOUT</p>}</main>}

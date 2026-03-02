@@ -1,0 +1,2 @@
+const link = process.env.NEXT_PUBLIC_NEMT_COMPLIANCE_KIT_CHECKOUT || '#';
+export default function Page(){return <main style={{padding:24,fontFamily:'Arial',maxWidth:860,margin:'0 auto'}}><h1>NEMT Compliance SOP Pack</h1><p>Operational SOP bundle for service quality, documentation, and audit consistency.</p><p><b>$149 one-time</b></p><a href={link} style={{background:'#1d4ed8',color:'#fff',padding:'10px 14px',borderRadius:8,textDecoration:'none'}}>Buy Now</a>{link==='#'&&<p style={{color:'#b45309'}}>Set NEXT_PUBLIC_NEMT_COMPLIANCE_KIT_CHECKOUT</p>}</main>}

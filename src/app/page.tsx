@@ -21,6 +21,12 @@ export default function HomePage() {
         </a>
       </section>
 
+      <section style={{ marginTop: 24, padding: 16, border: '1px solid #dbe4ff', borderRadius: 12, background: '#f8fbff' }}>
+        <h3 style={{ marginTop: 0 }}>New: Monetization Offer</h3>
+        <p>Launch-ready digital product page for your first online sales test.</p>
+        <a href="/nemt-starter-kit" style={{ color: '#1d4ed8', fontWeight: 700 }}>Open NEMT Starter Kit page →</a>
+      </section>
+
       <section style={{ marginTop: 24 }}>
         <h3>Starter Features</h3>
         <ul>

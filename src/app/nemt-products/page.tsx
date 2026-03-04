@@ -108,7 +108,7 @@ export default function NemtProductsPage() {
                 controls
                 playsInline
                 style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0, objectFit: 'cover' }}
-                src="/videos/nemt-product-intro-v2.mp4"
+                src="/videos/nemt-product-cartoon-v1.mp4"
               />
             </div>
             <p style={{ fontSize: 12, color: '#94a3b8', marginBottom: 0, marginTop: 10 }}>

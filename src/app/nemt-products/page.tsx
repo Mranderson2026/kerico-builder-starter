@@ -104,16 +104,15 @@ export default function NemtProductsPage() {
           <div style={{ background: '#0f172a', color: '#e2e8f0', borderRadius: 16, padding: 18 }}>
             <p style={{ marginTop: 0, fontWeight: 700, color: '#7dd3fc' }}>Quick Product Intro</p>
             <div style={{ position: 'relative', paddingTop: '56.25%', borderRadius: 12, overflow: 'hidden', background: '#111827' }}>
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="NEMT Product Intro"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+              <video
+                controls
+                playsInline
+                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0, objectFit: 'cover' }}
+                src="/videos/nemt-product-intro.mp4"
               />
             </div>
             <p style={{ fontSize: 12, color: '#94a3b8', marginBottom: 0, marginTop: 10 }}>
-              Replace this video with your own operator walkthrough for strongest conversion.
+              Custom product intro video generated for this page.
             </p>
           </div>
         </div>

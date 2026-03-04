@@ -26,7 +26,8 @@ const trustPoints = [
   'Built from real-world NEMT operations workflows',
   'Pricing and process discipline (25% margin-floor framework)',
   'Playbooks designed for immediate implementation',
-  'Founder-led operator insights, not generic templates'
+  'Founder-led operator insights, not generic templates',
+  'Backed by testimonials published on kericocare.com'
 ];
 
 const outcomes = [
@@ -34,6 +35,32 @@ const outcomes = [
   { label: 'Process clarity', value: 'High' },
   { label: 'Team adoption', value: 'Simple templates' },
   { label: 'Use case depth', value: 'Growth + Ops + Compliance' }
+];
+
+const testimonials = [
+  {
+    quote:
+      'Having a reliable transportation partner like Kerico allows us to focus on our core business, knowing that our employees and clients are well taken care of.',
+    role: 'Business Partner',
+    name: 'PADS, Houston, TX'
+  },
+  {
+    quote: 'My driver is always kind and patient and makes getting to dialysis appointments stress-free.',
+    role: 'Rider',
+    name: 'Houston, TX'
+  },
+  {
+    quote:
+      'I love the flexibility of this job. I get to help people and make a difference while still having time for my family.',
+    role: 'Driver',
+    name: 'Dallas, TX'
+  }
+];
+
+const testimonialVideos = [
+  'https://www.youtube.com/embed/BvJV-k86abw',
+  'https://www.youtube.com/embed/aWD5CKEyYbg',
+  'https://www.youtube.com/embed/7J1PH8H4x1o'
 ];
 
 export default function NemtProductsPage() {
@@ -133,23 +160,36 @@ export default function NemtProductsPage() {
       </section>
 
       <section style={{ background: '#0f172a', color: '#e2e8f0', padding: '36px 24px' }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 18 }}>
-          <div>
-            <h3 style={{ marginTop: 0 }}>Why buyers trust this suite</h3>
-            <ul style={{ marginTop: 10, color: '#cbd5e1' }}>
-              <li>Built from live Kerico operator workflows</li>
-              <li>Focused on measurable outcomes, not vague advice</li>
-              <li>Clear implementation paths for owners and teams</li>
-            </ul>
+        <div style={{ maxWidth: 1100, margin: '0 auto' }}>
+          <h3 style={{ marginTop: 0 }}>Why buyers trust this suite</h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 14 }}>
+            {testimonials.map((t) => (
+              <div key={t.quote} style={{ border: '1px solid #334155', borderRadius: 12, padding: 14, background: '#111827' }}>
+                <p style={{ marginTop: 0, color: '#e2e8f0' }}>“{t.quote}”</p>
+                <p style={{ marginBottom: 0, color: '#7dd3fc', fontWeight: 700 }}>{t.role}</p>
+                <p style={{ marginTop: 2, marginBottom: 0, color: '#94a3b8', fontSize: 13 }}>{t.name}</p>
+              </div>
+            ))}
           </div>
-          <div>
-            <h3 style={{ marginTop: 0 }}>Risk reversal messaging</h3>
-            <p style={{ color: '#cbd5e1', marginBottom: 8 }}>
-              Position this as a practical starter system: buyers can implement immediately and see operational clarity in
-              week one.
-            </p>
-            <p style={{ color: '#7dd3fc', margin: 0 }}>Tip: add one real operator case-study video for major trust lift.</p>
+
+          <h3 style={{ marginTop: 26 }}>Video testimonials</h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(300px,1fr))', gap: 12 }}>
+            {testimonialVideos.map((v) => (
+              <div key={v} style={{ position: 'relative', paddingTop: '56.25%', borderRadius: 10, overflow: 'hidden' }}>
+                <iframe
+                  src={v}
+                  title="Kerico testimonial video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+                />
+              </div>
+            ))}
           </div>
+
+          <p style={{ color: '#94a3b8', marginTop: 14 }}>
+            Testimonials and videos sourced from kericocare.com and adapted for this product trust section.
+          </p>
         </div>
       </section>
     </main>
